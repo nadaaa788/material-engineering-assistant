@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material selector</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+ <nav class="navbar">
+<div class="logo">
+<div class="hexagon">
+    MEA
+</div>
+<div class="logo-text">
+<h2> Material Enginerring assistant </h2>
+<p>Smart Materials platform </p>
+</div>
+</div>
+<ul class="nav-links">
+<li>
+    <a href="index.html"> Home </a>
+</li>
+<li>
+ <a href="selector.html"> Material selctor </a>   
+</li>
+<li>
+    <a href="diagnosis.html"> Failure Diagnosis </a>
+</li>
+<li>
+    <a href="#about"> About </a>
+</li>
+</ul>
+<a href="selector.html" class="btn">
+    Start Analysis
+</a>
+ </nav>
+    </header> 
+    <main>
+<section class="selector-hero">
+<h1>Material Selector</h1>
+
+<p>
+Find the most suitable engineering material based on your project requirements.
+</p>
+<form class="selector-form">
+ <div class="form-section">
+<label for="category">Material category</label>
+<select id="category">
+<option value="metals">Metals</option>
+<option value="polymers">Polymers</option>
+<option value="ceramics">Ceramics</option>
+<option value="composites">Composites</option>
+</select>
+ </div>
+<div class="form-section">
+<label> Required properties</label>
+<div>
+    <input type="checkbox" id="light">
+    <label for="light">lightweight</label>
+</div>
+<div>
+<input type="checkbox" id="strength">
+<label for="strength"> High Strength</label>
+</div>
+<div>
+<input type="checkbox" id="corrosion">
+<label for="corrosion"> Corrosion Resistance </label>
+</div>
+<div>
+<input type="checkbox" id="thermalResistance">
+<label for="thermalResistance"> Thermal Resistance</label>
+</div>
+</div>
+<div class="form-section">
+<label for="temperature">Operating Temperature</label>
+
+<input 
+type="number" 
+id="temperature" 
+placeholder="Enter temperature in °C">
+
+<label for="environment">Environment</label>
+
+<select id="environment">
+    <option value="normal">Normal</option>
+    <option value="corrosive">Corrosive</option>
+    <option value="high-temperature">High Temperature</option>
+    <option value="marine">Marine</option>
+</select>
+</div>
+<button type="button" class="analyze-btn" id="analyzeBtn">
+    Analyze Material
+</button>
+</form>
+<section class="result">
+
+    <h2>Recommended Materials</h2>
+
+    <div class="result-card" id="resultCard">
+
+        <h3 id="resultTitle">No result yet</h3>
+
+        <p id="resultText">
+            Fill the form and click Analyze Material.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+
+</section>
+
+
+    </main>
+<footer class="footer" id="about">
+
+    <h3>Material Engineering Assistant</h3>
+
+    <p>
+        Empowering engineers and students with smart material solutions.
+    </p>
+
+    <p class="copyright">
+        © 2026 Material Engineering Assistant. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="index.js"></script>
+</body>
+</html>

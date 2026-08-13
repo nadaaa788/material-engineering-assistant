@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Enginerring assistant </title>
+    <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+
+<body>
+<div id="bg3d"></div>
+
+    <header>
+ <nav class="navbar">
+<div class="logo">
+<div class="hexagon">
+    MEA
+</div>
+<div class="logo-text">
+<h2> Material Enginerring assistant </h2>
+<p>Smart Materials platform </p>
+</div>
+</div>
+<ul class="nav-links">
+<li>
+    <a href="index.html"> Home </a>
+</li>
+<li>
+ <a href="selector.html"> Material selctor </a>   
+</li>
+<li>
+    <a href="diagnosis.html"> Failure Diagnosis </a>
+</li>
+<li>
+    <a href="About.html"> About </a>
+</li>
+</ul>
+<a href="selector.html" class="btn">
+    Start Analysis
+</a>
+ </nav>
+    </header>
+ <main>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Choose the Right Material with Confidence</h1>
+
+            <p>
+                Analyze materials, compare their properties,
+                and diagnose failures using a smart engineering platform.
+            </p>
+
+            <a href="selector.html">
+                <button class="late">Start Analysis</button>
+            </a>
+
+        </div>
+<div class="hero-image">
+    <img src="images/pic.jpg.jpg" alt="Materials Illustration">
+</div>
+        </div>
+
+    </section>
+
+    <section class="features">
+<h2> Our features </h2>
+<div class="features-container">
+<div class="feature-card">
+<h3> Material selector </h3>
+<p> Find the best material based on your engineering requirements. </p>
+</div>
+<div class="feature-card">
+    <h3> Failure Diagnosis</h3>
+    <p> Identify possible causes of material Failure using smart Analysis.</p>
+</div>
+<div class="feature-card">
+<h3>Materials Database </h3>
+<p>Explore properties of metals , polymers , ceramics , and composites. </p>
+</div>
+</div>
+    </section>
+    <section class="about">
+
+    <div class="about-text">
+        <h2>About Material Engineering Assistant</h2>
+
+        <p>
+            Material Engineering Assistant is an intelligent platform designed to help students and engineers explore materials, compare their properties, and make better engineering decisions through a simple and modern interface.
+        </p>
+
+    </div>
+
+</section>
+<section class="categories">
+
+    <h2>Materials Categories</h2>
+
+    <div class="categories-container">
+
+        <div class="category-card">
+            <h3>Metals</h3>
+            <p>Explore mechanical properties, alloys, and industrial applications.</p>
+        </div>
+
+        <div class="category-card">
+            <h3>Polymers</h3>
+            <p>Discover polymer structures, properties, and manufacturing processes.</p>
+        </div>
+
+        <div class="category-card">
+            <h3>Ceramics</h3>
+            <p>Learn about ceramic materials and their engineering uses.</p>
+        </div>
+
+        <div class="category-card">
+            <h3>Composites</h3>
+            <p>Analyze advanced composite materials and their applications.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="assistant">
+
+    <h2>Ask Material Assistant</h2>
+
+    <p>
+        Describe your engineering requirements and discover suitable materials.
+    </p>
+
+    <div class="search-box">
+
+        <input type="text"  id="assistantInput" placeholder="Example: Strong and lightweight metal">
+
+        <button type="button" id="assistantBtn" class="btn"  >Analyze</button>
+        <p   id="assistantResult"></p>
+    </div>
+
+</section>
+
+</main>
+
+<footer class="footer" id="about">
+
+    <h3>Material Engineering Assistant</h3>
+
+    <p>
+        Empowering engineers and students with smart material solutions.
+    </p>
+
+    <p class="copyright">
+        © 2026 Material Engineering Assistant. All rights reserved.
+    </p>
+
+</footer>
+
+
+
+<script src="assistant.js"></script>
+   <script src="background3d.js"></script>   
+</body>
+</html>

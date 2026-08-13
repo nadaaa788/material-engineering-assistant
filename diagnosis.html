@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material selector</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+ <nav class="navbar">
+<div class="logo">
+<div class="hexagon">
+    MEA
+</div>
+<div class="logo-text">
+<h2> Material Enginerring assistant </h2>
+<p>Smart Materials platform </p>
+</div>
+</div>
+<ul class="nav-links">
+<li>
+    <a href="index.html"> Home </a>
+</li>
+<li>
+ <a href="selector.html"> Material selctor </a>   
+</li>
+<li>
+    <a href="diagnosis.html"> Failure Diagnosis </a>
+</li>
+<li>
+    <a href="#about"> About </a>
+</li>
+</ul>
+<a href="selector.html" class="btn">
+    Start Analysis
+</a>
+ </nav>
+    </header> 
+
+<main>
+<section class="selector-hero">
+<h1>Failure Diagnosis</h1>
+
+<p>
+Identify possible causes of material failure based on your observations.
+</p>
+
+<form class="selector-form">
+
+<div class="form-section">
+<label for="materialName">Material name</label>
+<input
+type="text"
+id="materialName"
+placeholder="e.g. Stainless Steel 316">
+</div>
+
+<div class="form-section">
+<label for="materialCategory">Material category</label>
+<select id="materialCategory">
+<option value="metals">Metals</option>
+<option value="polymers">Polymers</option>
+<option value="ceramics">Ceramics</option>
+<option value="composites">Composites</option>
+</select>
+</div>
+
+<div class="form-section">
+<label for="failureType">Failure type observed</label>
+<select id="failureType">
+<option value="fracture">Fracture</option>
+<option value="corrosion">Corrosion</option>
+<option value="fatigue">Fatigue</option>
+<option value="wear">Wear</option>
+<option value="deformation">Deformation</option>
+</select>
+</div>
+
+<div class="form-section">
+<label for="diagTemperature">Operating Temperature</label>
+
+<input
+type="number"
+id="diagTemperature"
+placeholder="Enter temperature in °C">
+
+<label for="diagEnvironment">Environment</label>
+
+<select id="diagEnvironment">
+<option value="normal">Normal</option>
+<option value="corrosive">Corrosive</option>
+<option value="high-temperature">High Temperature</option>
+<option value="marine">Marine</option>
+</select>
+</div>
+
+<button type="button" class="analyze-btn" id="diagnoseBtn">
+Diagnose
+</button>
+
+</form>
+
+<section class="result">
+
+<h2>Diagnosis Result</h2>
+
+<div class="form-section">
+<label for="languageSelect">Language / اللغة / Langue / Idioma</label>
+<select id="languageSelect">
+<option value="en">English</option>
+<option value="ar">العربية</option>
+<option value="fr">Français</option>
+<option value="es">Español</option>
+</select>
+</div>
+
+<div class="result-card" id="diagResultCard">
+
+<h3 id="diagResultTitle">No result yet</h3>
+
+<p id="diagResultText">
+Fill the form and click Diagnose.
+</p>
+
+</div>
+
+<button type="button" class="analyze-btn" id="suggestBtn" style="display:none; margin-top:20px;">
+Suggest Solutions
+</button>
+
+</section>
+
+<section class="result">
+
+<h2 id="solutionsTitle" style="display:none;">Suggested Solutions</h2>
+
+<div class="result-card" id="solutionsResultCard" style="display:none;">
+
+<p id="solutionsResultText"></p>
+
+</div>
+
+</section>
+
+</section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <footer class="footer" id="about">
+
+    <h3>Material Engineering Assistant</h3>
+
+    <p>
+        Empowering engineers and students with smart material solutions.
+    </p>
+
+    <p class="copyright">
+        © 2026 Material Engineering Assistant. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="diagnosis.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
