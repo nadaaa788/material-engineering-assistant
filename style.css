@@ -567,6 +567,25 @@ margin-top: 20px;
 
   .result-card {
     width: 90%;
+    padding: 20px;
+  }
+
+  #diagResultCard,
+  #solutionsResultCard {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #languageSelect {
+    max-width: 150px;
+  }
+
+  .result h2 {
+    font-size: 26px;
+  }
+
+  .properties {
+    grid-template-columns: 1fr;
   }
 
   h1 {
