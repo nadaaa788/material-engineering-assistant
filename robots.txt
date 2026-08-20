@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nadaaa788.github.io/material-engineering-assistant/sitemap.xml
